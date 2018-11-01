@@ -1,0 +1,27 @@
+
+<% city = data.cities[city] %>
+
+
+<div class="container text-center">
+  <h1>These are our cities</h1>
+
+  <ul class="list-inline">
+    <% %w(lisbon paris bali amsterdam ).each do |city| %>
+      <li>
+        <%= image_tag "https://kitt.lewagon.com/placeholder/cities/#{city}", class: "pic"  %>
+        <h3><%= city.capitalize %></h3>
+      </li>
+    <% end %>
+  </ul>
+
+  <ul class="list-inline">
+    <% data.cities.each do |city, info| %>
+      <li>
+        <h3><%= city%></h3>
+        <h3><%= info.address%></h3>
+        <h3><%= info.rating%></h3>
+      </li>
+    <% end %>
+  </ul>
+</div>
+

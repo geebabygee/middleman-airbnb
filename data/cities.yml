@@ -1,0 +1,7 @@
+lisbon:
+  address: "cais do sodre"
+  rating: 5
+
+paris:
+  address: "eifel tower"
+  rating: 4

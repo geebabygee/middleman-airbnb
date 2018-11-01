@@ -1,5 +1,12 @@
 <% flat = data.flats[owner] %>
 
+
+
+<%#= <% if false %>
+<%#= code to comment
+<% end %>
+
+
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%), url('https://kitt.lewagon.com/placeholder/cities/<%=flat.city_slug %>'); height: 50vh; background-position: center;">
 </div>
 
@@ -9,7 +16,7 @@
       <div class="col-xs-12 col-sm-6 col-sm-offset-1">
         <div class="header-flat-details">
           <div class="header-flat-owner  text-center">
-            <img src="https://kitt.lewagon.com/placeholder/users/<%= owner %>" class="img-circle" alt="Papillard" width="80">
+             <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle", width: 80, alt: owner %>
             <p><%= owner %></p>
           </div>
           <div class="header-flat-name">
@@ -53,57 +60,8 @@
   </div>
 </div>
 
-<div id="flat-description">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-        <h2>About this flat</h2>
-        <p>
-          This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur.
-        </p>
 
-        <hr>
-        <div class="row" id="flat-data">
-          <div class="col-xs-12 col-sm-2">
-            The Space
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <ul class="list-unstyled">
-              <li>Accommodates:  <strong>2</strong></li>
-              <li>Bathrooms:  <strong>1</strong></li>
-              <li>Bed type:  <strong>Real Bed</strong></li>
-              <li>Bedrooms:  <strong>1</strong></li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <ul class="list-unstyled">
-              <li>Beds: <strong>1</strong></li>
-              <li>Property type: <strong>Apartment</strong></li>
-              <li>Room type: <strong>Entire home/apt</strong></li>
-            </ul>
-          </div>
-        </div>
-        <hr>
-        <div class="row" id="flat-data">
-          <div class="col-xs-12 col-sm-2">
-            Amenities
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <ul class="list-unstyled">
-              <li><i class="fa fa-cutlery"></i><strong>Kitchen</strong></li>
-              <li><i class="fa fa-wifi"></i><strong>Wifi</strong></li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <ul class="list-unstyled">
-              <li><i class="fa fa-desktop"></i><strong>TV</strong></li>
-              <li><i class="fa fa-glass"></i><strong>Welcome drink</strong></li>
-            </ul>
-          </div>
-        </div>
 
-      </div>
-    </div>
-  </div>
-</div>
 
+
+<!-- source/flats/show.html.erb -->
